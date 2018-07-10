@@ -20,12 +20,8 @@ def new_winF(): # new window definition
     new.resizable(width=False, height=False)
     new.mainloop()
 
-button1 = tkinter.Button(root, text ="open new window", command =new_winF) #command linked
-button1.pack()
-
-
-
-
+button1 = tkinter.Button(root, text ="open new window", command =new_winF, height = 4, width = 6) #command linked
+button1.place(x=400, y=425)
 
 
 
