@@ -22,17 +22,44 @@ def root_win2():  # THIS FUNCTION IS WHERE THE QUESTION ASKING HAPPENS
     
   
     questions = {
-        1: "Describe what the instruction 'BRP' does.",
-        2: "Describe what is meant by the term 'Open Source Software'.",
-        3: "What is meant by the term 'Lossy Compression'?",
-        4: "What is the number '55' as an 8-bit unsigned integer?",
-        5: "What might a printer use RAM for?",
-        6: "Describe the term 'firewall'.",
-        7: "Describe the Rapid Application Development process."
-}
-
-
-
+        q1: "Describe what the instruction 'BRP' does.",
+        a1: ,
+        q2: "Describe what is meant by the term 'Open Source Software'.",
+        a2: ,
+        q3: "What is meant by the term 'Lossy Compression'?",
+        a3: ,
+        q4: "What is the number '55' as an 8-bit unsigned integer?",
+        a4: ,
+        q5: "What might a printer use RAM for?",
+        a5: ,
+        q6: "Describe the term 'firewall'.",
+        a6: ,
+        q7: "Describe the Rapid Application Development process."
+        a7 ,
+    }
+    
+    Qavailability = {
+        q1: "True"
+        q2: "True"
+        q3: "True"
+        q4: "True"
+        q5: "True"
+        q6: "True"
+        q7: "True"
+    }
+     ANS = randint(1,7) #Python will pick a "random" number, in this case, first must be 1 and second the amount of questions
+     Q='q'+ANS
+     A='a'+ANS
+     if Qavailability[Q] - "TRUE":
+            print(questions[Q])
+            response=input()
+            Qavailability[Q]="False"
+            if response==questions[A]:
+                print("correct")
+            elif response!=questions[A]:
+                print("incorrect")
+                
+            
 
 
 def root_win1():
